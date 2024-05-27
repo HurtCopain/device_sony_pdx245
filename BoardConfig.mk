@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-# Inherit from sony sm8550-common
--include device/sony/sm8550-common/BoardConfigCommon.mk
+# Inherit from sony sm8650-common
+-include device/sony/sm8650-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/sony/pdx234
+DEVICE_PATH := device/sony/pdx245
 
 # Display
 TARGET_SCREEN_DENSITY := 420
@@ -26,4 +26,4 @@ TARGET_SCREEN_DENSITY := 420
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # inherit from the proprietary version
--include vendor/sony/pdx234/BoardConfigVendor.mk
+-include vendor/sony/pdx245/BoardConfigVendor.mk

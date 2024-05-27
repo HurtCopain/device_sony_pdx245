@@ -22,8 +22,8 @@
 # definition file).
 #
 
-# Inherit from sony sm8550-common
-$(call inherit-product, device/sony/sm8550-common/common.mk)
+# Inherit from sony sm8650-common
+$(call inherit-product, device/sony/sm8650-common/common.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
@@ -39,9 +39,9 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    SonyPDX234SystemUIRes \
-    SonyPDX234NfcNciRes \
-    SonyPDX234FrameworksRes
+    SonyPDX245SystemUIRes \
+    SonyPDX245NfcNciRes \
+    SonyPDX245FrameworksRes
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
@@ -51,4 +51,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/sony/pdx234/pdx234-vendor.mk)
+$(call inherit-product, vendor/sony/pdx245/pdx245-vendor.mk)

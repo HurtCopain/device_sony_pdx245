@@ -8,8 +8,8 @@
 
 set -e
 
-export DEVICE_COMMON=pdx234
-export DEVICE_COMMON=sm8550-common
+export DEVICE_COMMON=pdx245
+export DEVICE_COMMON=sm8650-common
 export VENDOR=sony
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
