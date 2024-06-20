@@ -21,12 +21,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some cool Parasitic shit.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_INCLUDE_CARRIER_SERVICES := true
+TARGET_INCLUDE_CARRIER_SETTINGS := true
+TARGET_SUPPORTS_GOOGLE_BATTERY := true
+MAINLINE_INCLUDE_VIRT_MODULE := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 IS_PHONE := true
 
-PRODUCT_NAME := lineage_pdx245
+PRODUCT_NAME := aosp_pdx245
 PRODUCT_DEVICE := pdx245
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
